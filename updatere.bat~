@@ -1,0 +1,10 @@
+@echo off
+
+echo 'sono qui'
+call myFunc 100 prova
+
+
+
+:myFunc 
+echo 'Ciao napoli!'
+

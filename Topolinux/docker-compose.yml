@@ -1,11 +1,17 @@
 version: '2'
 services:
   WebServer:
-    image: 'dsp/linode_lamp:latest'
+    image: 'dockersecplayground/linode_lamp:latest'
     stdin_open: true
     tty: true
     ports:
-      - '10000:80'
+      - '9000:80'
+  EntryPoint:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '10000:4200'
     cap_add:
       - NET_ADMIN
 networks: {}

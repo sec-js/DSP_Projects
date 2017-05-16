@@ -1,0 +1,11 @@
+version: '2'
+services:
+  stellina:
+    image: 'dsp/shellinabox:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8000:4200'
+    cap_add:
+      - NET_ADMIN
+networks: {}

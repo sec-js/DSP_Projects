@@ -1,0 +1,41 @@
+version: '2'
+services:
+  Peppnico:
+    image: 'dsp/debian_base:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network:
+        ipv4_address: 192.168.1.8
+    cap_add:
+      - NET_ADMIN
+  rete:
+    image: 'dsp/debian_base:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network:
+        ipv4_address: 192.168.1.4
+    cap_add:
+      - NET_ADMIN
+  nocapadd:
+    image: 'alpine:latest'
+    stdin_open: true
+    tty: true
+  r:
+    image: 'dsp/linode_lamp:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '90:80'
+  po:
+    image: 'dsp/ftp_server:latest'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+networks:
+  network:
+    ipam:
+      config:
+        - subnet: 192.168.1.1/24

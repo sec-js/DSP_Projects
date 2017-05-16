@@ -1,0 +1,40 @@
+version: '2'
+services:
+  router:
+    image: 'dsp/alpine_base:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_one:
+        ipv4_address: 192.168.1.2
+      network_two:
+        ipv4_address: 192.168.2.2
+    cap_add:
+      - NET_ADMIN
+  one:
+    image: 'dsp/alpine_base:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_one:
+        ipv4_address: 192.168.1.3
+    cap_add:
+      - NET_ADMIN
+  two:
+    image: 'dsp/alpine_base:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_two:
+        ipv4_address: 192.168.2.3
+    cap_add:
+      - NET_ADMIN
+networks:
+  network_one:
+    ipam:
+      config:
+        - subnet: 192.168.1.1/24
+  network_two:
+    ipam:
+      config:
+        - subnet: 192.168.2.1/24

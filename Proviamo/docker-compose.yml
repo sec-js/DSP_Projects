@@ -1,9 +1,0 @@
-version: '2'
-services:
-  provotest:
-    image: 'dockersecplayground/shellinabox:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '10000:4200'
-networks: {}

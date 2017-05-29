@@ -1,0 +1,15 @@
+version: '2'
+services:
+  vulnFTP:
+    image: 'dockersecplayground/vuln_vsftpd:latest'
+    stdin_open: true
+    tty: true
+  Kali:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '10000:4200'
+    cap_add:
+      - ALL
+networks: {}

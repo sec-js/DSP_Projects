@@ -1,11 +1,10 @@
 version: '2'
 services:
-  Test:
+  hackme:
     image: 'dockersecplayground/ubuntu32:latest'
     stdin_open: true
     tty: true
     cap_add:
-      - NET_ADMIN
-      - SYS_ADMIN
-      - DAC_READ_SEARCH
+      - ALL
+    privileged: true
 networks: {}

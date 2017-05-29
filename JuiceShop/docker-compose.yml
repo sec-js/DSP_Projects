@@ -1,0 +1,17 @@
+version: '2'
+services:
+  kali:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '10000:4200'
+    cap_add:
+      - ALL
+  JuiceServer:
+    image: 'bkimminich/juice-shop:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '3000:3000'
+networks: {}

@@ -111,11 +111,11 @@ $show_bar=FALSE;
 
 
 		<div>
-		<h1>Postilla WebMasters !</h1>
+		<h1>Topolinux WebMasters !</h1>
 		</div>
 
 
-	    	 
+		 
 		
 		 
 	 
@@ -148,7 +148,7 @@ $show_bar=FALSE;
 		?>
 		
 
-	    	 
+		 
   	
   	
   	

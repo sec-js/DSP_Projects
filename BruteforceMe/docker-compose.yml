@@ -1,0 +1,23 @@
+version: '2'
+services:
+  kali:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '10000:4200'
+    cap_add:
+      - ALL
+  ftpServer:
+    image: 'dockersecplayground/alpine_ftp:latest'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+  telnet_server:
+    image: 'dockersecplayground/alpine_telnet:latest'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+networks: {}

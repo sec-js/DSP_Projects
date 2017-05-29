@@ -1,0 +1,47 @@
+version: '2'
+services:
+  bodgeit:
+    image: 'psiinon/bodgeit:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11000:8080'
+  dvwa:
+    image: 'citizenstig/dvwa:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11001:80'
+  Wordpress:
+    image: 'wpscanteam/vulnerablewordpress:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11003:80'
+  kali:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '10000:4200'
+    cap_add:
+      - ALL
+  webgoat:
+    image: 'danmx/docker-owasp-webgoat:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11002:8080'
+  nowasp:
+    image: 'citizenstig/nowasp:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11005:80'
+  owaspbricks:
+    image: 'citizenstig/owaspbricks:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11004:80'
+networks: {}

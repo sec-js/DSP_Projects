@@ -1,0 +1,38 @@
+version: '2'
+services:
+  router:
+    image: 'dockersecplayground/alpine_router:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      newNetwork:
+        ipv4_address: 192.168.1.3
+    cap_add:
+      - NET_ADMIN
+  telnetServer:
+    image: 'dockersecplayground/alpine_telnet:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      newNetwork:
+        ipv4_address: 192.168.1.4
+    cap_add:
+      - NET_ADMIN
+  entryPoint:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '10000:4200'
+    networks:
+      newNetwork:
+        ipv4_address: 192.168.1.2
+    volumes:
+      - './hostVolume:/containerVolume'
+    cap_add:
+      - ALL
+networks:
+  newNetwork:
+    ipam:
+      config:
+        - subnet: 192.168.1.1/24

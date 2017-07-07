@@ -2,12 +2,17 @@ update_image() {
 cd $1; docker build -t $2 . 
 cd ..
 }
-
-#update_image dsp_alpine_base dsp/alpine_base
-#update_image dsp_alpine_router dsp/alpine_router
-#update_image dsp_shellinabox dsp/shellinabox
-#update_image dsp_alpine_ssh_keys_auth/ dsp/alpine_ssh_keys_auth
-#update_image dsp_alpine_ssh_password_auth/ dsp/alpine_ssh_password_auth
-#update_image dsp_linode_lamp/ dsp/linode_lamp
-#update_image dsp_alpine_telnet/ dsp/alpine_telnet
-#update_image dsp_alpine_bot/ dsp/alpine_bot
+#update_image dockersecplayground_kali dockersecplayground/kali:latest
+update_image dockersecplayground_alpine dockersecplayground/alpine:latest
+update_image dockersecplayground_alpine_ftp dockersecplayground/alpine_ftp:latest
+update_image dockersecplayground_alpine_compiler dockersecplayground/alpine_compiler:latest
+update_image dockersecplayground_alpine_networking dockersecplayground/alpine_networking:latest
+update_image dockersecplayground_alpine_bot dockersecplayground/alpine_bot:latest
+update_image dockersecplayground_alpine_router dockersecplayground/alpine_router:latest
+update_image dockersecplayground_alpine_telnet dockersecplayground/alpine_telnet:latest
+update_image dockersecplayground_alpine_test dockersecplayground/alpine_test:latest
+update_image dockersecplayground_ssh_keys dockersecplayground/ssh_keys:latest
+update_image dockersecplayground_alpine_ssh_password dockersecplayground/alpine_ssh_password:latest
+#update_image dockersecplayground_shellinabox dockersecplayground/shellinabox:latest
+update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
+update_image dockersecplayground_ubuntu32 dockersecplayground/ubuntu32

@@ -2,6 +2,14 @@ update_image() {
 cd $1; docker build -t $2 . 
 cd ..
 }
+
+pull_image() {
+  # If doesn't exists pull
+ if [ -z "$(docker images | grep -w "$1")" ]; then
+  echo "Pulling $1..."
+  docker pull $1
+  fi
+}
 # Built images 
 update_image dockersecplayground_kali dockersecplayground/kali:latest
 update_image dockersecplayground_alpine dockersecplayground/alpine:latest
@@ -18,11 +26,11 @@ update_image dockersecplayground_shellinabox dockersecplayground/shellinabox:lat
 update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
 update_image dockersecplayground_ubuntu32 dockersecplayground/ubuntu32
 
-# Remote Images
-docker pull bkimminich/juice-shop:latest
-docker pull psiinon/bodgeit:latest
-docker pull webgoat/webgoat-7.1:latest
-docker pull citizenstig/dvwa:latest
-docker pull citizenstig/owaspbricks:latest
-docker pull citizenstig/nowasp:latest
-docker pull wpscanteam/vulnerablewordpress:latest
+# Remote Images NO LATEST TO LET THE pull_image function to properly work
+pull_image bkimminich/juice-shop
+pull_image psiinon/bodgeit
+pull_image webgoat/webgoat-7.1
+pull_image citizenstig/dvwa
+pull_image citizenstig/owaspbricks
+pull_image citizenstig/nowasp
+pull_image wpscanteam/vulnerablewordpress

@@ -2,6 +2,7 @@ update_image() {
 cd $1; docker build -t $2 . 
 cd ..
 }
+# Built images 
 update_image dockersecplayground_kali dockersecplayground/kali:latest
 update_image dockersecplayground_alpine dockersecplayground/alpine:latest
 update_image dockersecplayground_alpine_ftp dockersecplayground/alpine_ftp:latest
@@ -16,3 +17,12 @@ update_image dockersecplayground_alpine_ssh_password dockersecplayground/alpine_
 update_image dockersecplayground_shellinabox dockersecplayground/shellinabox:latest
 update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
 update_image dockersecplayground_ubuntu32 dockersecplayground/ubuntu32
+
+# Remote Images
+docker pull bkimminich/juice-shop:latest
+docker pull psiinon/bodgeit:latest
+docker pull webgoat/webgoat-7.1:latest
+docker pull citizenstig/dvwa:latest
+docker pull citizenstig/owaspbricks:latest
+docker pull citizenstig/nowasp:latest
+docker pull wpscanteam/vulnerablewordpress:latest

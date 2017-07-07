@@ -1,7 +1,0 @@
-version: '2'
-services:
-  JonEricksonContainer:
-    image: 'daindragon2/jon_erickson_container:latest'
-    stdin_open: true
-    tty: true
-networks: {}

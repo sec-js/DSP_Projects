@@ -1,0 +1,11 @@
+version: '2'
+services:
+  desktop:
+    image: 'dockersecplayground/kali_desktop:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '5901:5901'
+    cap_add:
+      - ALL
+networks: {}

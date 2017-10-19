@@ -1,0 +1,11 @@
+version: '2'
+services:
+  WebServer:
+    image: 'dockersecplayground/linode_lamp:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11110:80'
+    cap_add:
+      - NET_ADMIN
+networks: {}

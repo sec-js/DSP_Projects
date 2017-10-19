@@ -1,0 +1,9 @@
+version: '2'
+services:
+  WebGoat:
+    image: 'vimagick/webgoat:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '9999:8080'
+networks: {}

@@ -30,11 +30,11 @@ services:
     cap_add:
       - NET_ADMIN
   Kali:
-    image: 'dockersecplayground/kali:latest'
+    image: 'daindragon2/kali_desktop:latest'
     stdin_open: true
     tty: true
     ports:
-      - '10000:4200'
+      - '5901:5901'
     networks:
       internal_network:
         ipv4_address: 192.168.2.3

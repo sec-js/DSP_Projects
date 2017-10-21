@@ -5,11 +5,11 @@ services:
     stdin_open: true
     tty: true
   Kali:
-    image: 'dockersecplayground/kali:latest'
+    image: 'daindragon2/kali_desktop:latest'
     stdin_open: true
     tty: true
     ports:
-      - '10000:4200'
+      - '5901:5901'
     cap_add:
       - ALL
 networks: {}

@@ -11,7 +11,6 @@ pull_image() {
   fi
 }
 # Built images 
-update_image dockersecplayground_kali dockersecplayground/kali:latest
 update_image dockersecplayground_alpine dockersecplayground/alpine:latest
 update_image dockersecplayground_alpine_ftp dockersecplayground/alpine_ftp:latest
 update_image dockersecplayground_alpine_compiler dockersecplayground/alpine_compiler:latest
@@ -25,4 +24,8 @@ update_image dockersecplayground_alpine_ssh_password dockersecplayground/alpine_
 update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
 update_image dockersecplayground_ubuntu32 dockersecplayground/ubuntu32
 
+# Update entrypoint image 
+docker pull daindragon2/kali_desktop:latest
 # Remote Images NO LATEST TO LET THE pull_image function to properly work
+pull_image vimagick/webgoat:latest
+pull_image bkimminich/juice-shop:latest

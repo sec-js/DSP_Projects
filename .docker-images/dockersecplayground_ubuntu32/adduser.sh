@@ -56,5 +56,5 @@ if [ $PASSWORD_BOOL != true ] ; then
 fi
 
 useradd $NAME
-echo $PASSWORD | passwd  $NAME
+echo -e "${PASSWORD}\n${PASSWORD}" | passwd  $NAME
 mkhomedir_helper $NAME

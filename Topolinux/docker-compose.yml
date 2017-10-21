@@ -1,13 +1,5 @@
 version: '2'
 services:
-  EntryPoint:
-    image: 'dockersecplayground/kali:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '10000:4200'
-    cap_add:
-      - NET_ADMIN
   WebServer:
     image: 'dockersecplayground/linode_lamp:latest'
     stdin_open: true
@@ -16,4 +8,14 @@ services:
       - '9000:80'
     volumes:
       - './website:/var/www/example.com/public_html/topolinux_agency'
+    cap_add:
+      - NET_ADMIN
+  EntryPoint:
+    image: 'daindragon2/kali_desktop:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '5901:5901'
+    cap_add:
+      - ALL
 networks: {}

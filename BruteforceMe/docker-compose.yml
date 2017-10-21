@@ -1,13 +1,5 @@
 version: '2'
 services:
-  kali:
-    image: 'dockersecplayground/kali:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '10000:4200'
-    cap_add:
-      - ALL
   ftpServer:
     image: 'dockersecplayground/alpine_ftp:latest'
     stdin_open: true
@@ -20,4 +12,12 @@ services:
     tty: true
     cap_add:
       - NET_ADMIN
+  kali:
+    image: 'daindragon2/kali_desktop:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '5901:5901'
+    cap_add:
+      - ALL
 networks: {}

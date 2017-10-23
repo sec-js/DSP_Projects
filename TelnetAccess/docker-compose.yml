@@ -30,11 +30,11 @@ services:
     cap_add:
       - NET_ADMIN
   Kali:
-    image: 'daindragon2/kali_desktop:latest'
+    image: 'dockersecplayground/kali:latest'
     stdin_open: true
     tty: true
     ports:
-      - '5901:5901'
+      - '10000:23'
     networks:
       internal_network:
         ipv4_address: 192.168.2.3
@@ -42,6 +42,7 @@ services:
       - './dump_sniff:/dump_sniff'
     cap_add:
       - ALL
+    privileged: true
 networks:
   telnet_network:
     ipam:

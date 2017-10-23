@@ -13,11 +13,12 @@ services:
     cap_add:
       - NET_ADMIN
   kali:
-    image: 'daindragon2/kali_desktop:latest'
+    image: 'dockersecplayground/kali:latest'
     stdin_open: true
     tty: true
     ports:
-      - '5901:5901'
+      - '10000:23'
     cap_add:
       - ALL
+    privileged: true
 networks: {}

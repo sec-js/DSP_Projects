@@ -22,10 +22,10 @@ update_image dockersecplayground_alpine_test dockersecplayground/alpine_test:lat
 update_image dockersecplayground_ssh_keys dockersecplayground/ssh_keys:latest
 update_image dockersecplayground_alpine_ssh_password dockersecplayground/alpine_ssh_password:latest
 update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
-update_image dockersecplayground_ubuntu32 dockersecplayground/ubuntu32
+update_image dockersecplayground_ubuntu dockersecplayground/ubuntu32
+update_image dockersecplayground_kali dockersecplayground/kali
 
 # Update entrypoint image 
-docker pull daindragon2/kali_desktop:latest
 # Remote Images NO LATEST TO LET THE pull_image function to properly work
 pull_image vimagick/webgoat:latest
-pull_image bkimminich/juice-shop:latest
+#pull_image bkimminich/juice-shop:latest

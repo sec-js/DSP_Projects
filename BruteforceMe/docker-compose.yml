@@ -16,8 +16,6 @@ services:
     image: 'dockersecplayground/kali:latest'
     stdin_open: true
     tty: true
-    ports:
-      - '10000:23'
     cap_add:
       - ALL
     privileged: true

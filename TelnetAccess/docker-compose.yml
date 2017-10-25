@@ -33,8 +33,6 @@ services:
     image: 'dockersecplayground/kali:latest'
     stdin_open: true
     tty: true
-    ports:
-      - '10000:23'
     networks:
       internal_network:
         ipv4_address: 192.168.2.3

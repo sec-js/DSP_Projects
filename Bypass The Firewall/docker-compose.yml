@@ -1,5 +1,26 @@
 version: '2'
 services:
+  router:
+    image: 'dockersecplayground/alpine_router:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.1.2
+      external_network:
+        ipv4_address: 192.168.2.2
+    cap_add:
+      - NET_ADMIN
+  kali:
+    image: 'dockersecplayground/kali:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      external_network:
+        ipv4_address: 192.168.2.4
+    cap_add:
+      - ALL
+    privileged: true
   website:
     image: 'dockersecplayground/linode_lamp:latest'
     stdin_open: true
@@ -13,41 +34,6 @@ services:
       - './website:/var/www/example.com/public_html'
     cap_add:
       - NET_ADMIN
-  router:
-    image: 'dockersecplayground/alpine_router:latest'
-    stdin_open: true
-    tty: true
-    networks:
-      internal_network:
-        ipv4_address: 192.168.1.2
-      external_network:
-        ipv4_address: 192.168.2.2
-    cap_add:
-      - NET_ADMIN
-  entry:
-    image: 'dockersecplayground/alpine_ssh_password:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '22002:22'
-    networks:
-      external_network:
-        ipv4_address: 192.168.2.3
-    volumes:
-      - './history:/history'
-    cap_add:
-      - NET_ADMIN
-  kali:
-    image: 'daindragon2/kali_desktop:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '5901:5901'
-    networks:
-      external_network:
-        ipv4_address: 192.168.2.4
-    cap_add:
-      - ALL
 networks:
   internal_network:
     ipam:

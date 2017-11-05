@@ -1,5 +1,5 @@
 # Docker container with metasploit.
-FROM daindragon2/kali
+FROM daindragon2/kali:latest
 
 COPY adduser.sh /adduser.sh
 COPY setgw.sh /setgw.sh

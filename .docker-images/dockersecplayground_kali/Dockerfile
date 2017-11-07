@@ -6,7 +6,6 @@ COPY setgw.sh /setgw.sh
 COPY addctf.sh /addctf.sh
 COPY exec.sh /exec.sh
 
-
 LABEL \
   type="entry_point" \
     caps_add="ALL" \

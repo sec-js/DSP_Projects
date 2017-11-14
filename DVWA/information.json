@@ -1,1 +1,1 @@
-{"description":"Web application vulnerability","goal":"","solution":"<p>&nbsp;</p>\n<div style=\"height: 18px;\">&nbsp;</div>","author":"giper"}
+{"description":"Web application vulnerability","goal":"<p>Go to&nbsp;<a href=\"{{hostname}}:11110/DVWA\">{{hostname}}:11110/DVWA</a>&nbsp;and hack the site!</p>","solution":"<p>&nbsp;</p>\n<div style=\"height: 18px;\">&nbsp;</div>","author":"giper"}

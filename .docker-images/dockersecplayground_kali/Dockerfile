@@ -5,6 +5,9 @@ COPY adduser.sh /adduser.sh
 COPY setgw.sh /setgw.sh
 COPY addctf.sh /addctf.sh
 COPY exec.sh /exec.sh
+COPY addroute.sh  /addroute.sh
+
+RUN apt-get update && apt-get install -y netcat iproute nikto whatweb knockd
 
 LABEL \
   type="entry_point" \
@@ -33,6 +36,15 @@ LABEL \
     actions.setgw.description="Set default gateway  <name container gateway> " \ 
     actions.setgw.args.gateway.val="" \
     actions.setgw.args.gateway.type="text" \
-    actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" 
+    actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" \
+
+    actions.addroute.command="/addroute.sh" \ 
+    actions.addroute.description="Add a new route for the subnet : set router ip and subnet " \ 
+    actions.addroute.args.subnet.val="192.168.1.0/24" \
+    actions.addroute.args.subnet.rule.name="subnet" \
+    actions.addroute.args.subnet.type="text" \
+    actions.addroute.args.router_ip.val="" \
+    actions.addroute.args.router_ip.rule.name="ip" \
+    actions.addroute.args.router_ip.type="text" 
 
 CMD bash

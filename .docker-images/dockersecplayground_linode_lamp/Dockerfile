@@ -10,7 +10,7 @@ COPY exec.sh /exec.sh
 COPY sed.sh /sed.sh
 COPY sql_to_db.sh /sql_to_db.sh
 
-LABEL ports="80" \
+LABEL \
       type="server" \
       caps_add="NET_ADMIN" \
 

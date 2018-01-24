@@ -7,10 +7,11 @@ COPY adduser.sh /adduser.sh
 COPY setgw.sh /setgw.sh
 COPY addctf.sh /addctf.sh
 COPY exec.sh /exec.sh
+COPY disable_shell.sh /disable_shell.sh
 
 LABEL \
       type="host" \
-      caps_add="NET_ADMIN" \
+      caps_add="ALL" \
       actions.exec.command="/exec.sh " \ 
       actions.exec.description="Execute a command in the container" \ 
       actions.exec.args.command.val="mkdir hello" \
@@ -38,3 +39,6 @@ LABEL \
       actions.setgw.args.gateway.val="" \
       actions.setgw.args.gateway.type="text" \
       actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" \
+
+      actions.disableshell.command="/disable_shell.sh" \ 
+      actions.disableshell.description="Disable shell access" \ 

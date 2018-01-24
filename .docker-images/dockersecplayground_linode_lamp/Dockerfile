@@ -49,6 +49,7 @@ LABEL \
       actions.sql_to_db.args.db_name.val="" \ 
       actions.sql_to_db.args.db_name.type="text" \ 
       actions.sql_to_db.args.sql_file.val="" \ 
+      actions.sql_to_db.args.sql_file.type="text" \ 
 
       actions.setgw.command="/setgw.sh" \ 
       actions.setgw.description="Set default gateway  <name container gateway> " \ 

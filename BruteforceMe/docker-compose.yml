@@ -1,13 +1,13 @@
 version: '2'
 services:
-  ftpServer:
-    image: 'dockersecplayground/alpine_ftp:latest'
+  telnet_server:
+    image: 'dockersecplayground/alpine_telnet:latest'
     stdin_open: true
     tty: true
     cap_add:
       - NET_ADMIN
-  telnet_server:
-    image: 'dockersecplayground/alpine_telnet:latest'
+  ftpServer:
+    image: 'dockersecplayground/alpine_ftp:latest'
     stdin_open: true
     tty: true
     cap_add:

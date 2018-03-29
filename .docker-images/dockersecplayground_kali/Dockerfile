@@ -7,7 +7,10 @@ COPY addctf.sh /addctf.sh
 COPY exec.sh /exec.sh
 COPY addroute.sh  /addroute.sh
 
-RUN apt-get update && apt-get install -y netcat iproute nikto whatweb knockd
+RUN apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
+RUN apt-get update && apt-get install -y netcat iproute nikto knockd
+
+
 
 LABEL \
   type="entry_point" \

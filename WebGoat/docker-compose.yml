@@ -1,16 +1,16 @@
 version: '2'
 services:
+  kali:
+    image: 'dockersecplayground/kali:v1.0'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+    privileged: true
   WebGoat:
     image: 'vimagick/webgoat:latest'
     stdin_open: true
     tty: true
     ports:
       - '9999:8080'
-  kali:
-    image: 'dockersecplayground/kali:latest'
-    stdin_open: true
-    tty: true
-    cap_add:
-      - ALL
-    privileged: true
 networks: {}

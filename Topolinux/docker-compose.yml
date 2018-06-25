@@ -11,6 +11,8 @@ services:
     image: 'dockersecplayground/linode_lamp:v1.0'
     stdin_open: true
     tty: true
+    ports:
+      - '9000:80'
     volumes:
       - './website:/var/www/example.com/public_html/topolinux_agency'
     cap_add:

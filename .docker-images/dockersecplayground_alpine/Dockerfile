@@ -26,7 +26,7 @@ LABEL \
       actions.adduser.args.password.type="text" \
       actions.adduser.args.password.rule.pattern="^[a-zA-Z0-9_-]+$" \
 
-	actions.addctf.command="/addctf.sh" \ 
+      actions.addctf.command="/addctf.sh" \ 
       actions.addctf.description="Add a ctf in /home/<username> directory inside a secret file" \ 
       actions.addctf.args.username.val="" \
       actions.addctf.args.username.type="text" \

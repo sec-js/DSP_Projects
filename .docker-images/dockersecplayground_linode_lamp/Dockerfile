@@ -19,6 +19,8 @@ COPY mysql_set_root_user.sh /mysql_set_root_user.sh
 COPY ftp_start.sh /ftp_start.sh
 COPY ftp_stop.sh /ftp_stop.sh
 COPY adduser.sh /adduser.sh
+COPY addctf.sh /addctf.sh
+COPY addrootctf.sh /addrootctf.sh
 
 COPY vsftpd /etc/xinetd.d/vsftpd
 COPY vsftpd.conf /etc/vsftpd.conf
@@ -101,3 +103,16 @@ LABEL \
 
       actions.ftp_stop.command="/ftp_stop.sh" \ 
       actions.ftp_stop.description="Stop ftp service" \ 
+
+      actions.addctf.command="/addctf.sh" \ 
+      actions.addctf.description="Add a ctf in /home/<username> directory inside a secret file" \ 
+      actions.addctf.args.username.val="" \
+      actions.addctf.args.username.type="text" \
+      actions.addctf.args.username.rule.pattern="^[a-zA-Z0-9_-]+$" \
+      actions.addctf.args.ctf.val="" \
+      actions.addctf.args.ctf.type="text" \
+
+      actions.addrootctf.command="/addrootctf.sh" \ 
+      actions.addrootctf.description="Add a ctf in /root directory inside a secret file" \ 
+      actions.addrootctf.args.ctf.val="" \
+      actions.addrootctf.args.ctf.type="text" \

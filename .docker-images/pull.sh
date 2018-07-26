@@ -19,7 +19,7 @@ pull_image dockersecplayground/alpine_ssh_password:v1.0
 pull_image dockersecplayground/linode_lamp:v1.0
 pull_image dockersecplayground/linode_lamp:v2.0
 pull_image dockersecplayground/ubuntu32
-pull_image dockersecplayground/kali
+pull_image dockersecplayground/kali:v1.0
 
 # Update entrypoint image
 # Remote Images NO v1.0 TO LET THE pull_image function to properly work

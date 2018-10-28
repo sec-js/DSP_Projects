@@ -1,6 +1,6 @@
 FROM linode/lamp
 
-RUN apt-get update && apt-get install -y php5-mysql php5-gd python vsftpd xinetd
+RUN apt-get update && apt-get install -y php5-mysql php5-gd python vsftpd xinetd ftp wget
 RUN rm -rf /var/www/example/example.com && rm /etc/apache2/sites-available/* && rm /etc/apache2/sites-enabled/* 
 
 COPY setgw.sh /setgw.sh

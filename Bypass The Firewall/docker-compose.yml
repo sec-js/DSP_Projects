@@ -1,15 +1,5 @@
 version: '2'
 services:
-  kali:
-    image: 'dockersecplayground/kali:v1.0'
-    stdin_open: true
-    tty: true
-    networks:
-      external_network:
-        ipv4_address: 192.168.2.4
-    cap_add:
-      - ALL
-    privileged: true
   ssh:
     image: 'dockersecplayground/alpine_ssh_password:v1.0'
     stdin_open: true

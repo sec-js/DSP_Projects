@@ -1,12 +1,5 @@
 version: '2'
 services:
-  EntryPoint:
-    image: 'dockersecplayground/kali:v1.0'
-    stdin_open: true
-    tty: true
-    cap_add:
-      - ALL
-    privileged: true
   WebServer:
     image: 'dockersecplayground/linode_lamp:v1.0'
     stdin_open: true

@@ -1,1 +1,1 @@
-{"description":"Web application vulnerability","goal":"<p>Go to <a href=\"{{hostname}}:11110/mutillidae\">{{hostname}}:11110/mutillidae</a>&nbsp;and hack it!</p>","solution":"<p>&nbsp;</p>\n<div style=\"height: 18px;\">&nbsp;</div>","author":"giper"}
+{"description":"Web application vulnerability","goal":"<p>Go to <a href=\"{{hostname}}:11111/mutillidae\" target=\"_blank\" rel=\"noopener noreferrer\">{{hostname}}:11111/mutillidae</a>&nbsp;and hack it!</p>","solution":"<p>&nbsp;</p>\n<div style=\"height: 18px;\">&nbsp;</div>","author":"dsp"}

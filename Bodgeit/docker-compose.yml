@@ -1,0 +1,9 @@
+version: '2'
+services:
+  bodgeit:
+    image: 'psiinon/bodgeit:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8081:8080'
+networks: {}

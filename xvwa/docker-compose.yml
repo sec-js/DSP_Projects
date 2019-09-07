@@ -1,0 +1,9 @@
+version: '2'
+services:
+  xvwa:
+    image: 'tuxotron/xvwa:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11188:80'
+networks: {}

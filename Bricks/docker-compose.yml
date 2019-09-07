@@ -1,0 +1,9 @@
+version: '2'
+services:
+  bricks:
+    image: 'gjuniioor/owasp-bricks:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11182:80'
+networks: {}

@@ -1,0 +1,22 @@
+#cloud-config
+ssh_authorized_keys:
+ - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDzgPCu2BqlmlqyG5deW6UpCatVG+t4IvtDeIJAuELMDrYMCcOCOID+gvuZmrGQiDbIQQ/ZaXJDGUFI5f/9tafLF6ycE4JUvV2MoQ8OBrwY3PUexz5/6dKRfxt7huC8QLS0k5B/9Iwq3v548BHVr1Ie7XVPfYPFvxvPDTUpMDF29aSNstmKb9U/A4MYDLlq9lCTOZDeFKnaJ5ADFlX9DlgdagwECGPCQaVxjw1RKt9A6ifQNhORlIglNqjKOXG1B4eyFAlvjUKMcco2vX4eO6NpWAnl/whDTu85LQLkNlODmoSFH8xS5uLiipKAAQhAo37sdKpfH4vxteBm5p9hpRGD gx1@ubuntu-UX310UQK
+rancher:
+  console: ubuntu
+  network:
+    dns:
+      nameservers:
+        - 8.8.8.8
+        - 8.8.4.4
+write_files:
+  - path: /etc/rc.local
+    permissions: "0755"
+    owner: root
+    content: |
+      #!/bin/bash
+      curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+      sudo apt-get update && apt-get install -y git build-essential nodejs docker-compose
+      git clone https://github.com/giper45/DockerSecurityPlayground.git
+      cd DockerSecurityPlayground
+      npm install
+

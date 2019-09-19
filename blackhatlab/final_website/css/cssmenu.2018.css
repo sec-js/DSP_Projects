@@ -1,0 +1,117 @@
+#cssmenu {
+	margin-top:-7px;
+	display:block;
+	padding:0;
+} 
+
+#cssmenu > ul  {
+	list-style:inside none;
+	padding:0;
+	margin:0;
+	border-left: 1px solid #5BC2E7;
+}
+
+#cssmenu > ul > li  {
+	list-style:inside none;
+	padding:0;
+	margin:0;
+	float:left;
+	display:block;
+	position:relative;
+} 
+
+#cssmenu > ul > li > a {
+	outline:none;
+	display:block;
+	position:relative;
+	padding:10px 20px 0 20px;
+} 
+
+#cssmenu > ul > li:first-child > a {
+} 
+
+#cssmenu > ul > li > a:after {
+	content:'';
+	position:absolute;
+	top:-1px;
+	bottom:-1px;
+	right:-2px;
+	z-index:99;
+} 
+
+#cssmenu ul li.has-sub .has-sub-dd { 
+	background:url('https://www.blackhat.com/images/page-graphics-18/triangle_blue.png') no-repeat 92% center;
+}
+#cssmenu ul li.has-sub a { 
+	padding:10px 24px 0 12px;
+}
+#cssmenu ul li.has-sub:hover > a:after {
+	top:0;
+	bottom:0;
+} 
+
+#cssmenu > ul > li.has-sub > a:before {
+	content:'';
+	position:absolute;
+	top:18px;
+	right:6px;
+} 
+#cssmenu > ul > li.has-sub:hover > a:before {
+	top:19px;
+} 
+#cssmenu ul li.has-sub:hover > a {
+/*
+	background:url('../images/page-graphics/triangle.png') no-repeat 92% center;
+*/
+	z-index:999;
+}
+#cssmenu ul li.has-sub:hover > ul, #cssmenu ul li.has-sub:hover > div {
+	display:block;
+} 
+#cssmenu ul li.has-sub > a:hover {
+} 
+#cssmenu ul li > ul, #cssmenu ul li > div {
+	display:none;
+	width:auto;
+	position:absolute;
+	top:44px;
+	padding:3px 0;
+	z-index:999;
+} 
+#cssmenu ul li > ul {
+	margin: -10px 0 0 -1px;
+	width:170px;
+} 
+#cssmenu ul li > ul li {
+	display:block;
+	list-style:inside none;
+	padding:0;
+	margin:0;
+	position:relative;
+} 
+#cssmenu ul li > ul li a {
+	color:#84dd34;
+	outline:none;
+	display:block;
+	position:relative;
+	margin: -1px 0 1px 0;
+	padding: 10px 20px 1px 20px;
+	background-color:#5BC2E7;
+	border-bottom: 1px solid #557a17;
+	min-width: 120px;
+} 
+	
+#cssmenu, #cssmenu > ul > li > ul > li a:hover {
+	background-color:#1A658F;
+	color:#fff;
+} 
+#cssmenu {
+} 
+#cssmenu > ul > li > a {
+} 
+#cssmenu > ul > li > a:after {
+} 
+#cssmenu > ul > li > a:hover {
+} 
+#social-wrapper { margin-top: 7px; }
+#header-links ul li:first-child { border-left:0; }

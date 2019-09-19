@@ -1,0 +1,818 @@
+/* ---------------- Color Palette ----------------- */
+
+/*				Green ---> #5BC2E7				*/
+
+/* -------------- END Color Palette --------------- */
+
+/* ---------- Overwrites  ------------ */
+body {background: url('https://www.blackhat.com/images/page-graphics-18/BH_BodyBG.jpg') no-repeat #000 top center;} /* body */
+.footer1 a { color:#5BC2E7 !important;} /* superfooter links */
+.front-page-sustaining-sponsors-icons div {border-color: #5BC2E7 !important;} /*footer partners img borders */
+#review-board-content-main img {border:1px solid #5BC2E7; max-width: 100px;} /* new reivew boards main content */
+#review-board-content-main .review-board-img {width:100px; height:100px; margin: 0 23px 10px 0;} /* new reivew boards main content */
+#cssmenu ul li > ul li a { background-color:#1A658F !important; color:#fff !important; border-bottom-color: #000 !important;} /* top nav dropdown */
+#cssmenu ul li > ul li a:hover { background-color:#5BC2E7 !important;} 
+
+/* ---------- Fonts  ------------ */
+a {
+	color: #5BC2E7;
+	text-decoration: none;
+}
+p {
+	margin: 0 0 5px 0;
+}
+strong {
+	font-size: 120%;
+}
+hr {
+	color: #5BC2E7;
+	background-color: #5BC2E7;
+	height: 1px;
+	margin: 10px 0;
+}
+.grey-hr {
+	color: #444;
+	background-color: #444;
+	height: 1px;
+	margin: 6px 0;
+}
+h1 {
+	color: #5BC2E7;
+	font-size: 17px;
+	margin: 2px 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+h2 {
+	color: #5BC2E7;
+	font-size: 15px;
+	/*height: 18px;*/
+	margin: 3px 0 0 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h3  {
+	color: #5BC2E7;
+	font-size: 13px;
+	margin: 3px 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h4 {
+	color:#ccc;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+h5 {
+	color:#fff;
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+.short {
+	letter-spacing: 0;
+}
+.white {
+	color:#fff;
+	font-size: inherit;
+	margin:0 0 0 1px;
+}
+.grey {
+	color: #999;
+	font-size: inherit;
+	margin: 0 0 0 1px;
+}
+.white {
+	color: #fff;
+	font-size: inherit;
+	margin: 0 0 0 1px;
+}
+.h2-grey {
+	float:left;
+}
+/* ---------- End Fonts  ------------ */
+
+
+
+/* ---------- Tables  ------------ */
+table {
+	margin: 0 0 10px 0;
+}
+
+thead tr th {
+	background-color: #1A658F;
+	text-align: left;
+	font-size:16px;
+	font-weight: bold;
+	padding: 10px 0 10px 4px;
+}
+tbody tr:nth-child(even) {
+	background-color: #333;
+}
+tbody tr:nth-child(odd) {
+	background-color: #444;
+}
+tbody tr td {
+	padding: 10px 0 10px 4px;
+}
+.no-background-color {
+	background-color: transparent;	
+}
+#special-table, #special-table table, #special-table table tbody tr td {
+Â  Â  padding: 0;
+	margin: 0;
+}
+#special-table tbody tr:nth-child(odd), #special-table tbody tr:nth-child(even) {
+	background-color: transparent;Â 
+}
+/* ---------- End Tables Â ------------ */
+
+
+
+/* ---------- Lists & Bullets  ------------ */
+.list-title {
+	border-bottom: 1px solid #01536d;
+	padding-bottom: 3px;
+	font-size: 15px;
+	font-weight: normal;
+}
+.list-title-bullet {
+	width:3px;
+	height:18px;
+	background-color: #33ceff;
+	float: left;
+	margin: 0 5px 0 0;
+}
+.blue-bullet {
+	list-style-type: none;
+	list-style-image: url('https://www.blackhat.com/images/page-graphics-asia-18/bullet.png');
+	margin:0 0 12px 0;
+}
+.blue-bullet li {
+	border-bottom: 1px solid #5BC2E7;
+	padding: 10px 0;
+	min-height: 20px;
+}
+.no-border {
+	margin-left: 10px;
+}
+.no-border li {
+	padding: 2px 0;
+	border:0;
+}
+ul {
+	list-style-type: none;
+	margin: 0 0 12px 0;
+}
+li {
+	margin: 0;
+}
+.pdf {
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/pdf-icon.png') no-repeat left;
+	min-height: 32px;
+	display: block;
+	padding:16px 0 0 35px;
+}
+.email {
+	background: url('https://www.blackhat.com/images/page-graphics/email-icon.png') no-repeat left;
+	min-height: 32px;
+	display: block;
+	padding:16px 0 0 35px;	
+	
+}
+.xls {
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/xls-icon.png') no-repeat left;
+	min-height: 32px;
+	display: block;
+	padding:16px 0 0 35px;
+	
+}
+.doc {
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/doc-icon.png') no-repeat left;
+	min-height: 32px;
+	display: block;
+	padding:16px 0 0 35px;	
+	
+}
+.audio {
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/audio-icon.png') no-repeat left;
+	min-height: 32px;
+	display: block;
+	padding:16px 0 0 35px;
+}
+
+
+/* ---------- End Lists & Bullets  ------------ */
+
+/* ---------- Header ------------ */
+.header {
+	height: 145px;
+	margin: 0;
+	/*background: url('../images/page-graphics-usa13/BH_HeaderBG.jpg') repeat-x;*/
+}
+
+#header-links {
+	width:995px;s
+	height:28px;
+	margin: 0 auto;
+	padding: 7px 0 0 0;
+}
+/* -----------#header-links ul {
+	float:left;
+	list-style: none;
+	list-style-type: none;
+	height:36px;
+	width: auto;
+	padding:0;
+	margin: -8px 0 0 0;
+}
+#header-links ul li:first-child {
+	border-left: 1px solid #112f39;
+}
+#header-links ul li {
+	display: inline-block;
+	border-bottom: none;
+	border-right: 1px solid #112f39;
+	padding: 11px 10px 0 14px;
+	margin-left:-4px;
+}
+#header-links ul li:hover {
+	background: url('../images/page-graphics-usa13/top-link-background.png') repeat-x;
+	padding-left: 2px;
+}------*/
+
+#header-links a {
+	color:#fff;
+	text-decoration: none;
+	font-size: 11px;
+	height: 25px;
+	float:left;
+	display: block;
+}
+
+#header-logo-mission {
+	width:995px;
+	height: 110px;
+	margin: 0 auto;
+}
+#social-wrapper {
+	float:right;
+	text-align: right;
+}
+a.social-icon {
+	display: block;
+}
+.social-icon {
+	width:29px;
+	height:29px;
+	margin: -5px 3px 0 3px;
+	position: relative;
+	float: left;
+}
+.social-icon img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.social-icon img:hover {
+	opacity: 0;
+}
+#logo {
+	display:block;
+	float:left;    
+    margin: 30px 0 10px -670px
+}
+#mission {
+	width:510px;
+	height:56px;
+	float:right;
+	margin: 15px 0 0 0;
+	background: url('https://www.blackhat.com/images/page-graphics/mission-statement.png') no-repeat top left;
+	padding: 10px 0 10px 20px;
+}
+#mission .two-lines {
+	padding-top: 11px;
+}
+
+/* ---------- End Header ------------ */
+
+
+/* ---------- Left Column ------------ */
+.left-col {
+	min-height:85px;
+	margin-bottom:5px;
+}
+.left-col a {
+	color: #fff;
+}
+.left-col-green-anchors {
+	width:133px;
+	padding: 5px 10px 12px 10px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+
+	list-style-image: none;	
+}
+.left-col-green-anchors li {
+	padding: 10px 0;
+	min-height: 20px;
+	border-bottom: 1px solid #5BC2E7;
+	padding: 5px 0 5px 5px;
+}
+.left-col-green-anchors li:last-child {
+	border: 0;
+	padding-bottom: 0;
+}
+
+
+/* ---------- End Left Column ------------ */
+
+
+
+
+/* ---------- Main Content Front Page ------------ */
+.main-content {
+	min-height: 100px;
+}
+.content-title-wrapper {
+	margin: 0 0 10px 0;
+	width: 741px;
+	height: 28px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/content-title-wrapper.png') no-repeat top left;
+}
+
+#main-event {
+	min-height:188px;
+	margin-bottom: 10px;
+}
+#second-event {
+	min-height:188px;
+	margin-bottom: 10px;
+}
+#third-event {
+	min-height:188px;
+	margin-bottom: 10px;
+}
+#europe {
+	margin: 0 0 20px 0;
+}
+#asia {
+	margin-bottom: 20px;
+}
+#abudhabi {
+	margin: 0 0 20px 0;
+}
+#seattle {
+	margin-bottom: 0 0 20px 0;	
+}
+#istanbul {
+	margin: 0 0 20px 0;	
+}
+#saopaulo {
+	margin: 0 0 20px 0;			
+}
+.registration-open {
+	width: 202px;
+	height: 62px;
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/registration-open.png') no-repeat top left;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+.visit-site {
+	width: 202px;
+	height: 62px;
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/visit-site.png') no-repeat top left;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+.view-more {	
+	float:right;
+	height:18px;
+	margin: 0 0 10px 0;
+	color:#5BC2E7;
+}
+.view-more-bullet {
+	width:3px;
+	height:18px;
+	background-color: #33ceff;
+	float: right;
+	margin: 0 0 0 5px;
+	padding: 0;
+	border: 0;
+}
+.webcast-reg {
+	float:right;
+}
+.webcast-img {
+	float:right;
+	padding:5px;
+	border: 1px solid #5BC2E7;
+	margin-left:10px;
+}
+.webcast-img a {
+	display: block;
+}
+.event-img {
+	width: 363px;
+	height: 188px;
+	position: relative;
+}
+.event-img img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.event-img img:hover {
+	opacity: 0;
+}
+#special-events {
+	min-height:100px;
+	margin-bottom: 10px;
+}
+.special-events-li {
+	height: 100px;
+	margin: 10px 0;
+}
+.special-events-hr {
+	color: #292929;
+	background-color: #292929;
+	height: 1px;	
+}
+.special-events-default-img {
+	width:99px;
+	height:91px;
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/special-events-default-img.png') no-repeat top left;
+}
+.special-events-halo-img {
+	width:99px;
+	height:91px;
+	background: url('https://www.blackhat.com/images/halo/HALO2.png') no-repeat top left;
+}
+#perspective-wrapper {
+	min-height: 100px;
+}
+.perspective {
+	min-height:100px;
+	width: 217px;
+	padding: 5px 10px;
+	background-color: #0a2933;
+	margin-bottom: 10px;
+}
+.perspective-default-img {
+	width: 217px;
+	height: 93px;
+	background-color: #000;
+	border: 1px solid #01536d;
+	margin: 0 0 10px 0;
+}
+/* ---------- End Main Content Front Page ------------ */
+
+
+/* ---------- Main Content Inner Pages ------------ */
+.content-wrapper {
+	min-height: 260px;
+}
+.main-content-inner {
+	min-height: inherit;
+}
+.main-content-inner .view-more {
+	margin: 0 0 -4px 0;
+}
+.main-content-inner .view-more:hover {
+	text-decoration: none;
+}
+.main-content-inner .view-more-bullet {
+	margin: -2px 0 0 5px;
+}
+.main-content-inner .view-more-bullet:hover {
+	cursor:pointer;
+}
+.main-content-inner hr {
+	margin:0 0 15px 0;
+}
+.main-content-inner h2 {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+.main-content-inner h2 .sub {
+	font-size: 14px;
+}
+.main-content-inner h3 {
+	font-size: 12px;
+	text-transform: none;
+	line-height: 1.6;
+}
+.main-content-inner p {
+	margin: 0 0 10px 0;
+}
+.main-content-inner p:last-child {
+	margin: 0;
+}
+.main-img {
+	margin-top: 4px;
+	padding:4px;	
+    background-color:#071b07;
+	border:1px solid #5BC2E7;
+}
+.align-left {
+	margin-right:10px;
+}
+.align-right {
+	margin-left:10px;
+}
+.plain-list {
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	padding:0;
+}
+.plain-list hr {
+	height:2px;
+}
+.plain-list li {
+	min-height:150px;
+	border: 0;
+	padding:0;
+	margin: 0;
+}
+.upcoming-img img {
+	padding: 3px;
+	background-color:#071b07;
+	border:1px solid #5BC2E7;
+}
+
+.blue-bottom {
+	padding:0;
+	margin:0;	
+}
+.blue-bottom h3 {
+	color: #5BC2E7;
+	text-transform:none;	
+	font-size:18px;
+	margin:0;
+}
+.blue-bottom li {
+	border-bottom: 1px solid #5BC2E7;
+	padding: 20px 0;
+	margin:0;
+	min-height: 20px;
+}
+/* ---------- End Main Content Inner Pages ------------ */
+
+
+/* ---------- Right Column ------------ */
+.right-col {
+	min-height: 100px;
+}
+.right-col hr {
+	height:1px;
+}
+#training-review-board a.review-board-img { margin: 0 20px 10px 25px; }
+#review-board-content img,
+#review-board img {
+	padding:3px;
+	background-color:#071b07;
+	border:1px solid #5BC2E7;
+}
+.right-col-title-background {
+	margin: 0 0 5px 0;
+	padding: 1px 10px;
+	width: 236px;
+	height: 27px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-title-background.png') no-repeat top left;
+}
+.right-col-bottom {
+	height:6px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+}
+#latest-news, .right-col-container {
+	min-height:100px;
+	margin-bottom: 20px;
+}
+#latest-news-content {
+	margin-bottom: 5px;
+	padding: 5px 10px 20px 10px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+}
+#generic-right-col-content {
+	margin-bottom: 5px;
+	padding: 5px 10px 5px 10px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+}
+#review-board {
+	min-height:100px;
+	margin-bottom: 20px;
+}
+#review-board-content {
+	min-height:100px;
+	margin-bottom: 5px;
+	padding: 15px 10px 20px 10px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+}
+#review-board-content a {
+	display: block;
+}
+.review-board-img {
+	width:60px;
+	height:60px;
+	margin: 0 6px 10px 6px;
+	float:left;
+}
+#review-board-default-1 {	
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/review-board-default-1.png') no-repeat top left;
+}
+#review-board-default-2 {
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/review-board-default-2.png') no-repeat top left;
+}
+#review-board-default-3 {
+	background: url('https://www.blackhat.com/images/page-graphics-usa13/review-board-default-3.png') no-repeat top left;
+/*}#sustaining-sponsors {
+	min-height:100px;
+	margin-bottom: 20px;
+}
+#sustaining-sponsors-content {
+	text-align: center;
+	min-height:100px;
+	margin-bottom: 5px;
+	padding: 20px 10px 12px 10px;
+	background: url('../images/page-graphics-usa13/right-col-background.png') repeat top left;
+}
+.sustaining-sponsor-anchor {
+	background-color: #000;
+	width:200px;
+	height:70px;
+	margin: 0 15px 15px 0;
+	float:left;
+	display: table-cell;
+	vertical-align: middle;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.sustaining-sponsor-anchor a {
+	display: block;
+	width:100px;
+	height:56px;
+	line-height: 56px;
+	text-align: center;
+}
+.sustaining-sponsor-anchor a:hover {
+	text-decoration: none;
+}
+.sustaining-sponsor-anchor img {
+	vertical-align: middle;
+*/
+}
+#sustaining-sponsors {
+	min-height:100px;
+	margin-bottom: 20px;
+}
+#sustaining-sponsors-content {
+	text-align: center;
+	min-height:100px;
+	margin-bottom: 5px;
+	padding: 20px 10px 12px 10px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+}
+.sustaining-sponsors-icons div {
+	border: 1px solid #085A73;
+}
+.sustaining-sponsor-anchor {
+	background-color: #000;
+	width: 215px;
+	height: 56px;
+	margin: 0 15px 15px 0;
+	float:left;
+	display: table-cell;
+	vertical-align: middle;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.sustaining-sponsor-anchor a {
+	display: block;
+	width: 215px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+}
+.sustaining-sponsor-anchor a:hover {
+	text-decoration: none;
+}
+.sustaining-sponsor-anchor img {
+	vertical-align: middle;
+
+}
+.bh-sustaining-partner { 
+    background-color: #fff;
+    width: 120px;
+    height: 60px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.front-page-sustaining-sponsors-icons div {
+	border: 1px solid #5BC2E7;	
+}
+.front-page-sponsor-anchor {
+	background-color: #222;
+	width: 101px;
+	height:40px;
+	margin: 0 60px 0 0;
+	display: inline-block;
+
+	padding: 7px 0;
+}
+.front-page-sponsor-anchor a img {
+    max-height: 38px;
+	
+}
+.front-page-sponsor-anchor:last-child { margin-right:0; 
+}
+.front-page-sponsor-anchor a {
+	height:40px;
+	line-height: 40px;
+	width: 101px;
+	background-color: #222;
+	border: 1px solid transparent;
+	padding: 17px 0;
+}
+.front-page-sponsor-anchor a:hover {
+	text-decoration: none;
+}
+.front-page-sponsor-anchor img {
+	vertical-align: middle;
+}
+#front-page-sustaining-sponsors-container { 
+	margin-right: 0;
+	width: 993px;
+}
+.front-page-sustaining-sponsors-icons { 
+	width: 967px;
+	height: 55px;
+	padding: 13px;
+	margin-bottom:5px;
+	background: url('https://www.blackhat.com/images/page-graphics-18/right-col-background.png') repeat top left;
+	/* background-color: #143744; */
+    text-align: center;
+}
+.front-page-sponsor-anchor .last-sponsor, .last-sponsor, .last-sustaining-sponsor {
+	margin:0;	
+}
+
+
+/* ---------- End Right Column ------------ */
+
+
+
+/* ---------- Footer ------------ */
+.footer strong, .portal-footer strong {
+	color:#fff;
+}
+.portal-footer {
+	width:100%;
+	height:338px;
+	border-top: 3px solid #0b2933;
+	margin: 40px auto 0 auto;
+	padding: 20px 0 0 0;
+	color: #fff;
+}
+.portal-footer a {
+	color: #33ceff;	
+}
+/* ---------- End Footer ------------ */
+
+/* ---------- Miscellaneous ------------ */
+.nospace {margin-bottom:0px;}
+
+.normal-text { line-height:25px; font-size:13px; text-transform:none; font-weight:normal; font-family:Â "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", sans-serif, Verdana }
+
+
+
+.mailinglist_form { margin: 20px 0 40px 0; position:relative; }
+.mailinglist_form .intro { font-size: 120%; }
+.mailinglist_form .row { margin: 10px 0; }
+.mailinglist_form input[type=text] { margin: 5px 3px 5px 0px; height: 20px; width: 90%; }
+.mailinglist_form .personal_info div { margin-bottom:10px; }
+.mailinglist_form .personal_info label { font-weight:bold;  }
+.mailinglist_form .fieldLabel { font-size:120%; font-weight:bold; margin-bottom: 10px; }
+
+.defaultText.buttonStyle {
+    color:white;
+    border:0;
+    background-color:#5BC2E7;
+    padding:4px 6px;
+}
+#container_SUBSCRIPTION_GROUP .checkbox_wrap {
+    margin-bottom:4px;
+}

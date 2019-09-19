@@ -1,0 +1,32 @@
+version: '2'
+services:
+  two:
+    image: 'dockersecplayground/linode_lamp:v2.0'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 194.10.1.3
+  final:
+    image: 'dockersecplayground/linode_lamp:v2.0'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 194.10.1.4
+    volumes:
+      - './final_website:/var/www/'
+  one:
+    image: 'dockersecplayground/linode_lamp:v2.0'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 194.10.1.2
+    volumes:
+      - './website:/var/www'
+networks:
+  public_network:
+    ipam:
+      config:
+        - subnet: 194.10.1.1/24

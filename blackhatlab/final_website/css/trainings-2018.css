@@ -1,0 +1,144 @@
+/* -----------------------------------------------------------------------
+Online Trainings CSS
+by: Mateusz Sawka
+6.6.2016
+last update:
+12.19.16 m.s. for 17' green update
+----------------------------------------------------------------------- */ß
+.title {
+    color:#33ceff;
+}
+.online-training p {
+    margin: 0 0 35px 0;
+}
+.online-training hr {
+    margin:25px 0;
+}
+.online-training h1 {
+    border-bottom: 1px solid #5BC2E7;
+    margin: 25px 0 15px 0;
+    padding: 0 0 10px 0;
+}
+.blackhat-cta {
+    background: url('https://www.blackhat.com/images/trainings/trainings-cta-18.png') no-repeat bottom left;
+    height:212px;
+    margin: 0 0 25px 0;
+}
+.blackhat-cta span {
+    display: inline-block;
+    margin: 115px 0 0 30px;
+}
+.blackhat-cta:hover > span, .usa-cta:hover > p span, .usa-cta:hover > span,
+.europe-cta:hover > p span, .europe-cta:hover > span, .asia-cta:hover > p span, .asia-cta:hover > span{
+    text-decoration: underline;
+}
+.usa-cta {
+    background: url('https://www.blackhat.com/images/trainings/trainings-usa-cta-18.png') no-repeat bottom left;
+}
+.europe-cta {
+    background: url('https://www.blackhat.com/images/trainings/trainings-europe-cta-18.png') no-repeat bottom left;
+}
+.asia-cta {
+    background: url('https://www.blackhat.com/images/trainings/trainings-asia-cta-18.png') no-repeat bottom left;
+}
+.usa-cta, .europe-cta, .asia-cta {
+    height:231px;
+    position: relative;
+}
+.usa-cta p, .europe-cta p, .asia-cta p {
+    margin:120px 0 0 20px;
+    color:white;
+}
+.usa-cta p span, .europe-cta p span, .asia-cta p span {
+    color:#5BC2E7;
+}
+span.visit-site-cta {
+    float:right;
+    bottom: 10px;
+    position: absolute;
+    right: 20px;
+    display:inline-block;
+}
+/* For the Call to Action boxes on /trainings/index.html */
+a.trainings-cta {
+	background: linear-gradient(#002938, #000);
+	color: #fff;
+	display: inline-block;
+	max-width: 100%;
+	min-height: 200px;
+	padding: 15px 20px;
+	position: relative;
+}
+a.trainings-cta:hover {
+	text-decoration: none;
+}
+a.trainings-cta, a.trainings-cta img {
+	border: 1px solid #6acdec;
+}
+a.trainings-cta img {
+	background: #000;
+	padding: 10px;
+	margin: 0 auto 10px auto;
+	max-height: 90%;
+	max-width: 90%;
+}
+a.trainings-cta p {
+	border-bottom: 1px solid #6acdec;
+	margin: 0 0 20px 0;
+	padding: 0 0 25px 0;
+}
+a.trainings-cta span, a.trainings-cta strong {
+	color: #6acdec;
+}
+a.trainings-cta:hover span, a.trainings-cta:hover strong {
+	text-decoration: underline;
+}
+a.trainings-cta span {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+}
+a.trainings-cta strong {
+	font-size: 100%;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+/* online-training.html */
+.trainings-entry {
+    border-top: 1px solid #01536d;
+    padding: 10px 0 0 0;
+    margin: 15px 0 0 0;
+    clear:both;
+    display:table;
+}
+.trainings-entry:first-of-type {
+    margin-top:10px;
+}
+.left-col-green-anchors {
+    margin: 25px 0 0 0;
+}
+.registration-link {
+    display:inline-block;
+    color:white;
+    background-color:#01536d;
+    padding: 10px 7px;
+}
+/* trainings-detail.html */
+.training-detail h1 { width:450px;}
+a.training-detail-reg {
+    float:right;
+    padding: 25px 0 0 0;
+}
+.training-detail hr {
+    margin: 10px 0;
+}
+.training-detail-bio p {
+    margin-bottom:20px;
+}
+.training-detail-bio p:first-of-type {
+    color:#999;
+}
+.training-detail-bio p:first-of-type strong {
+    color:#fff;
+}

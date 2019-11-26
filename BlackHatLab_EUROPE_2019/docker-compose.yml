@@ -1,0 +1,31 @@
+version: '2'
+services:
+  blackhat_server_1:
+    image: 'blackhat_2019_1:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 193.168.201.22
+  blackhat_server_3:
+    image: 'blackhat_2019_4:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 193.168.201.42
+    volumes:
+      - './shellshock/config:/etc/apache2'
+      - './shellshock/website:/var/www/html'
+  blackhat_server_2:
+    image: 'dockersecplayground/blackhat_2019_2:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 193.168.201.33
+networks:
+  public_network:
+    ipam:
+      config:
+        - subnet: 193.168.201.1/24

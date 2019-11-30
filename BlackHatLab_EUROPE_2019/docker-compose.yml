@@ -1,14 +1,14 @@
 version: '2'
 services:
   blackhat_server_1:
-    image: 'blackhat_2019_1:latest'
+    image: 'dockersecplayground/blackhat_2019_1:latest'
     stdin_open: true
     tty: true
     networks:
       public_network:
         ipv4_address: 193.168.201.22
   blackhat_server_3:
-    image: 'blackhat_2019_4:latest'
+    image: 'dockersecplayground/blackhat_2019_4:latest'
     stdin_open: true
     tty: true
     networks:

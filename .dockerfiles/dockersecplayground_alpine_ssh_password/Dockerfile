@@ -38,5 +38,5 @@ LABEL \
       actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" 
 
 # Keep running ssh
-CMD  "chmod 400 /etc/ssh/ssh_host_ed25519_key"
+COPY ./ssh /etc
 CMD ["/usr/sbin/sshd","-D"]

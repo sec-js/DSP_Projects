@@ -35,4 +35,8 @@ LABEL \
       actions.setgw.description="Set default gateway  <name container gateway> " \ 
       actions.setgw.args.gateway.val="" \
       actions.setgw.args.gateway.type="text" \
-      actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" \
+      actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" 
+
+# Keep running ssh
+CMD  "chmod 400 /etc/ssh/ssh_host_ed25519_key"
+CMD ["/usr/sbin/sshd","-D"]

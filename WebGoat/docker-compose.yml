@@ -1,7 +1,7 @@
 version: '2'
 services:
   WebGoat:
-    image: 'vimagick/webgoat:latest'
+    image: 'webgoat/webgoat-8.0:latest'
     stdin_open: true
     tty: true
     ports:

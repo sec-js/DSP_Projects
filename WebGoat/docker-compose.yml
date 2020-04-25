@@ -4,6 +4,13 @@ services:
     image: 'webgoat/webgoat-8.0:latest'
     stdin_open: true
     tty: true
+  nginx:
+    image: 'nginx:1.15-alpine'
+    stdin_open: true
+    tty: true
     ports:
-      - '9999:8080'
-networks: {}
+      - '9999:80'
+    depends_on:
+      - WebGoat
+    volumes:
+      - './nginx-config:/etc/nginx/conf.d'

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DockerSecurityPlayground
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
@@ -187,3 +188,37 @@ Got to [CHANGELOG.md](CHANGELOG.md) to see al the version changes.
 
 ## License
 This project is under the **MIT license**
+=======
+# DSP_Projects
+Docker Security Playground official repository  
+This repository contains the list of official DSP labs.   
+Contribute to the project by adding new DSP labs by using https://github.com/giper45/DockerSecurityPlayground    
+## List of labs   
+
+### Web Applications:  
+- Bodgeit  
+- Bricks	  
+- DVWA  
+- DVWS  
+- Juice Shop  
+- Topolinux  
+- bwapp  
+- gruyere  
+- dvna  
+- mutillidae  
+- sqli-labs  
+- wacko  
+- wavsep  
+- xvwa  
+
+### Buffer Overflow:  
+- Hacker_1  
+### Sniffing:  
+- TelnetAccess  
+
+### Password Cracking  
+- BruteforceMe  
+
+### Firewall  
+- Bypass The Firewall
+>>>>>>> f312cd1fc66474ac913ced2a6369cfa49cad8a4f

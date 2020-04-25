@@ -1,0 +1,9 @@
+version: '2'
+services:
+  gruyere:
+    image: 'karthequian/gruyere:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8008:8008'
+networks: {}

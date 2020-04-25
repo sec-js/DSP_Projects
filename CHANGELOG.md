@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 
 
 ## [Unreleased]
+<<<<<<< HEAD
  Fix of Angular WebSocket Code during installation long running
  Fix the filterImage bug in edit container page OK
  Fix the .data bug (delete when .data is empty)
@@ -116,3 +117,11 @@ In graph_editor there was a bug: when an image was changed the ports weren't res
 ## [1.2.0] - 2017-05-11
 ### Added
    - Added the installation script for Ubuntu: "/scripts/ubuntu_deps_install.sh"
+=======
+### Added
+Add jon erickson container to containers
+Add v1.0 image version to all labs
+### Changed
+SSH Example Fixed
+
+>>>>>>> f312cd1fc66474ac913ced2a6369cfa49cad8a4f

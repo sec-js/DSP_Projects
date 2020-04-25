@@ -1,0 +1,1 @@
+{"description":"Web goat vulnerable image","goal":"<p>Go to <a href=\"{{hostname}}:9999/WebGoat\" target=\"_blank\" rel=\"noopener noreferrer\">{{hostname}}:9999/WebGoat</a>&nbsp;and hack it!</p>","solution":"","author":"dsp"}

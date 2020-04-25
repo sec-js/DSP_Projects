@@ -1,0 +1,10 @@
+version: '2'
+services:
+  hackme:
+    image: 'dockersecplayground/ubuntu32:v1.0'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+    privileged: true
+networks: {}

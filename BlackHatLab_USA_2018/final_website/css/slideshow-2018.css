@@ -1,0 +1,23 @@
+#slideShow {margin-top:15px;}
+.slides_container div.slide 	{display:block;}
+#slides .next,#slides .prev 	{position:absolute; top:0px; left:8px; display:none; z-index:101;}
+.pagination 				{margin:10px auto; width:100px;}
+.pagination li 			{float:left; margin:0 1px; list-style:none;}
+.pagination li a 			{display:block; width:12px; height:0; padding-top:12px; background-image:url(https://www.blackhat.com/images/slides/pagination-2018.png); background-position:0 0; float:left; overflow:hidden;}
+.pagination li.current a 	{background-position:0 -12px;}
+.caption 					{
+						z-index:500;
+						position:absolute; bottom:-35px;
+						left:0; height:63px;
+						padding:5px 20px 0 20px;
+						background:#FFF;
+						background:rgba(255,255,255,.8);
+						width:701px; font-size:1.3em;
+						line-height:1.33; color:#000;
+						text-shadow:none;
+						margin-bottom: 20px;
+						font-size:13px;
+						line-height:21px;
+						}
+.caption span.title		{font-weight: bold; font-size: 18px; line-height:20px; color:#1A658F;}
+.caption span.controller	a	{color:#1A658F;}

@@ -1,0 +1,15 @@
+version: '2'
+services:
+  ftpServer:
+    image: 'dockersecplayground/alpine_ftp:v1.0'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+  telnet_server:
+    image: 'dockersecplayground/alpine_telnet:v1.0'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+networks: {}

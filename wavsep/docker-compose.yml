@@ -1,0 +1,9 @@
+version: '2'
+services:
+  wavsep:
+    image: 'owaspvwad/wavsep:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '18081:8080'
+networks: {}

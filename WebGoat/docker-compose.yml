@@ -1,0 +1,9 @@
+version: '2'
+services:
+  WebGoat:
+    image: 'webgoat/webgoat-8.0:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '9999:8080'
+networks: {}

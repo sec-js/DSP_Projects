@@ -1,0 +1,20 @@
+{
+  "config": {
+    "enableLogin": false,
+    "dsp_reponame": "dsp_repo",
+    "name_labelfile": "labels.json",
+    "name_snippetsfile": "snippets.json",
+    "static_content": "../public/",
+    "applicationRepo": "https://github.com/giper45/DockerSecurityPlayground.git",
+    "repos": [
+      {
+        "name": "DSP_Projects",
+        "url": "https://github.com/giper45/DSP_Projects.git"
+      },
+      {
+        "name": "NetworkSecurity_Unina",
+        "url": "https://github.com/NS-unina/DSP_Repo.git"
+      }
+    ]
+  }
+}

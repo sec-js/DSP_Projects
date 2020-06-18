@@ -1,9 +1,0 @@
-version: '2'
-services:
-  Ciccio:
-    image: 'dsp/ftp_server:latest'
-    stdin_open: true
-    tty: true
-    cap_add:
-      - NET_ADMIN
-networks: {}

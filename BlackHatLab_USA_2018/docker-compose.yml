@@ -25,6 +25,10 @@ services:
         ipv4_address: 194.10.1.2
     volumes:
       - './website:/var/www'
+  element_02:
+    image: 'lab.egeos-services.it:5500/seonse/portal/proxy-docker-image:1.0'
+    stdin_open: true
+    tty: true
 networks:
   public_network:
     ipam:

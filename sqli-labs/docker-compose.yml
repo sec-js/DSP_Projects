@@ -1,9 +1,9 @@
 version: '2'
 services:
-  sqli-labs:
-    image: 'appsecco/dvna:sqlite'
+  sqli:
+    image: 'acgpiano/sqli-labs:latest'
     stdin_open: true
     tty: true
     ports:
-      - '9090:9090'
+      - '9090:80'
 networks: {}

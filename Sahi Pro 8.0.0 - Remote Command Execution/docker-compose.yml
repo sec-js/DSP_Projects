@@ -1,0 +1,7 @@
+version: '2'
+services:
+  sahi:
+    image: 'dockersecplayground/sahi_pro:latest'
+    stdin_open: true
+    tty: true
+networks: {}

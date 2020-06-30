@@ -1,12 +1,9 @@
 version: '2'
 services:
   persian:
-    image: 'dockersecplayground/linode_lamp:v2.0'
+    image: 'dockersecplayground/persian:latest'
     stdin_open: true
     tty: true
     ports:
       - '18080:80'
-    volumes:
-      - './website:/var/www'
-      - './mysql:/var/lib/mysql'
 networks: {}

@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pluto:
+    image: 'dockersecplayground/pluto_3:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '19080:8080'
+networks: {}

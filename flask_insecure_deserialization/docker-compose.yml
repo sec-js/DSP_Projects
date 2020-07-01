@@ -1,0 +1,9 @@
+version: '2'
+services:
+  flask:
+    image: 'dockerbucket/insecure_deserialization:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '3000:3000'
+networks: {}

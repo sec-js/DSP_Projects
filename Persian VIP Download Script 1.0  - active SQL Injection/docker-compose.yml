@@ -1,9 +1,0 @@
-version: '2'
-services:
-  persian:
-    image: 'dockersecplayground/persian:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '18080:80'
-networks: {}

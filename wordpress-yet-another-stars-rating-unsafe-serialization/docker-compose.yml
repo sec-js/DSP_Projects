@@ -1,0 +1,26 @@
+version: '2'
+services:
+  wp:
+    image: >-
+      dockersecplayground/wordpress-yet-another-stars-rating-unsafe-serialization:latest
+    stdin_open: true
+    tty: true
+    ports:
+      - '11080:80'
+    environment:
+      - 'WORDPRESS_DB_HOST=db:3306'
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+  db:
+    image: 'mysql/mysql-server:5.7'
+    stdin_open: true
+    tty: true
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    volumes:
+      - './database:/docker-entrypoint-initdb.d'
+networks: {}

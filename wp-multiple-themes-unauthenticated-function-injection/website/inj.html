@@ -1,0 +1,22 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	console.log("document ready");
+	var ajax_url = "./wp-admin/admin-ajax.php"
+	var data = {
+		'action':  'epsilon_framework_ajax_action',
+		'args': {
+			'action': ["Requests", "request_multiple"],
+			'args' : [{"url": "http://192.168.74.128:8000"}]
+		}
+	}
+	$.post(ajax_url, data, function(response) {
+		console.log("in response")
+	});
+});
+</script>
+
+
+</html> 
+

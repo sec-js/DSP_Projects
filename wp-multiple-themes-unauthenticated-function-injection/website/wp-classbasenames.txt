@@ -1,0 +1,60 @@
+class Core_Upgrader extends WP_Upgrader {
+class Language_Pack_Upgrader extends WP_Upgrader {
+class WP_Community_Events {
+class WP_Debug_Data {
+class WP_Site_Health {
+class WP_Upgrader {
+class Akismet_Admin {
+class Akismet {
+class Akismet_REST_API {
+class Shapely_Builder {
+class Wp_Bootstrap_Navwalker extends Walker_Nav_Menu {
+class Epsilon_Content_Backup {
+class Epsilon_Notifications {
+class Epsilon_Notify_System {
+class Epsilon_Ajax_Controller {
+class Epsilon_Customizer {
+class Epsilon_Helper {
+class Epsilon_Sanitizers {
+class Epsilon_Color_Coded_Categories {
+class Epsilon_Color_Scheme {
+class Epsilon_Page_Generator {
+class Epsilon_Repeater_Templates {
+class Epsilon_Typography {
+class Epsilon_Welcome_Screen {
+class TwentyNineteen_SVG_Icons {
+class Twenty_Twenty_One_Custom_Colors {
+class Twenty_Twenty_One_SVG_Icons {
+class AtomFeed {
+class AtomEntry {
+class AtomParser {
+class WP_Http {
+class Requests {
+class WP_Application_Passwords {
+class WP_Block_Supports {
+class WP_Http_Curl {
+class WP_Http_Encoding {
+class WP_Http_Streams {
+class WP_HTTP_Fsockopen extends WP_HTTP_Streams {
+class WP_Image_Editor_GD extends WP_Image_Editor {
+class WP_Image_Editor_Imagick extends WP_Image_Editor {
+class WP_MatchesMapRegex {
+class WP_Network {
+class WP_oEmbed {
+class WP_User_Meta_Session_Tokens extends WP_Session_Tokens {
+class WP_User {
+class WP_User_Query {
+class WP_Customize_Nav_Menu_Item_Setting extends WP_Customize_Setting {
+class Requests_Cookie {
+class Requests_Exception_HTTP extends Requests_Exception {
+class Requests_IDNAEncoder {
+class Requests_IPv6 {
+class Requests_IRI {
+class Requests_SSL {
+class Requests_Transport_cURL implements Requests_Transport {
+class Requests_Transport_fsockopen implements Requests_Transport {
+class WP_REST_Request implements ArrayAccess {
+class WP_REST_Server {
+class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
+class WP_Widget_Custom_HTML extends WP_Widget {
+class WP_Widget_Text extends WP_Widget {

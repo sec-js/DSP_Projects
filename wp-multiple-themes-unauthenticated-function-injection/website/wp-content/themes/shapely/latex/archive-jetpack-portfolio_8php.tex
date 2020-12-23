@@ -1,0 +1,95 @@
+\hypertarget{archive-jetpack-portfolio_8php}{}\doxysection{archive-\/jetpack-\/portfolio.php File Reference}
+\label{archive-jetpack-portfolio_8php}\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_a2b0d08e73a90b9443ce37506b7c6a544}{\$layout}} = get\+\_\+theme\+\_\+mod( \textquotesingle{}projects\+\_\+layout\+\_\+view\textquotesingle{}, \textquotesingle{}mansonry\textquotesingle{} )
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_a7045148caa121f88b8c2777e190c4812}{\$layout\+\_\+class}} = shapely\+\_\+get\+\_\+layout\+\_\+class()
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_aed86e2a297da900769dd8c716948e3cb}{\$item\+\_\+classes}} = \textquotesingle{}post-\/snippet col-\/md-\/3 col-\/sm-\/6 project\textquotesingle{}
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_ab4d017bcc79cd2827c3dce8af2570e91}{endif}}
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_a2af835420cc4ac3f109be98a113610be}{\$projects\+\_\+args}}
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_a9be056afff33f103018220a5d7a8852e}{\$project\+\_\+types}} = wp\+\_\+get\+\_\+post\+\_\+terms( \$post-\/$>$ID, \textquotesingle{}jetpack-\/\mbox{\hyperlink{readme_8txt_a65f8b9d00ab49ec652d2443fb5c63ce6}{portfolio}}-\/type\textquotesingle{}, \$projects\+\_\+args )
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_a590b8de195aaadec585256b0cad3a014}{\$thumbnail\+\_\+url}} = get\+\_\+the\+\_\+post\+\_\+thumbnail\+\_\+url( get\+\_\+the\+\_\+\+ID(), \textquotesingle{}full\textquotesingle{} )
+\item 
+\mbox{\hyperlink{archive-jetpack-portfolio_8php_a8ad864c7ea1ad7f48f131d33b410a29b}{\$item\+\_\+style}} = \textquotesingle{}\textquotesingle{}
+\item 
+if(has\+\_\+post\+\_\+thumbnail()) \mbox{\hyperlink{archive-jetpack-portfolio_8php_ab562c3506f4ec7d5c183ea063234360f}{endwhile}}
+\item 
+\mbox{\hyperlink{header_8php_a46061e9d534a2b88c19b06ebe19099ad}{else}} \mbox{\hyperlink{archive-jetpack-portfolio_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_aed86e2a297da900769dd8c716948e3cb}\label{archive-jetpack-portfolio_8php_aed86e2a297da900769dd8c716948e3cb}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$item\_classes@{\$item\_classes}}
+\index{\$item\_classes@{\$item\_classes}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$item\_classes}{$item\_classes}}
+{\footnotesize\ttfamily \$item\+\_\+classes = \textquotesingle{}post-\/snippet col-\/md-\/3 col-\/sm-\/6 project\textquotesingle{}}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a8ad864c7ea1ad7f48f131d33b410a29b}\label{archive-jetpack-portfolio_8php_a8ad864c7ea1ad7f48f131d33b410a29b}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$item\_style@{\$item\_style}}
+\index{\$item\_style@{\$item\_style}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$item\_style}{$item\_style}}
+{\footnotesize\ttfamily \$item\+\_\+style = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a2b0d08e73a90b9443ce37506b7c6a544}\label{archive-jetpack-portfolio_8php_a2b0d08e73a90b9443ce37506b7c6a544}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$layout@{\$layout}}
+\index{\$layout@{\$layout}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$layout}{$layout}}
+{\footnotesize\ttfamily \$layout = get\+\_\+theme\+\_\+mod( \textquotesingle{}projects\+\_\+layout\+\_\+view\textquotesingle{}, \textquotesingle{}mansonry\textquotesingle{} )}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a7045148caa121f88b8c2777e190c4812}\label{archive-jetpack-portfolio_8php_a7045148caa121f88b8c2777e190c4812}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$layout\_class@{\$layout\_class}}
+\index{\$layout\_class@{\$layout\_class}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$layout\_class}{$layout\_class}}
+{\footnotesize\ttfamily \$layout\+\_\+class = shapely\+\_\+get\+\_\+layout\+\_\+class()}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a9be056afff33f103018220a5d7a8852e}\label{archive-jetpack-portfolio_8php_a9be056afff33f103018220a5d7a8852e}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$project\_types@{\$project\_types}}
+\index{\$project\_types@{\$project\_types}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$project\_types}{$project\_types}}
+{\footnotesize\ttfamily \$project\+\_\+types = wp\+\_\+get\+\_\+post\+\_\+terms( \$post-\/$>$ID, \textquotesingle{}jetpack-\/\mbox{\hyperlink{readme_8txt_a65f8b9d00ab49ec652d2443fb5c63ce6}{portfolio}}-\/type\textquotesingle{}, \$projects\+\_\+args )}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a2af835420cc4ac3f109be98a113610be}\label{archive-jetpack-portfolio_8php_a2af835420cc4ac3f109be98a113610be}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$projects\_args@{\$projects\_args}}
+\index{\$projects\_args@{\$projects\_args}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$projects\_args}{$projects\_args}}
+{\footnotesize\ttfamily \$projects\+\_\+args}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array(}
+\DoxyCodeLine{                        \textcolor{stringliteral}{'fields'} => \textcolor{stringliteral}{'names'},}
+\DoxyCodeLine{                    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a590b8de195aaadec585256b0cad3a014}\label{archive-jetpack-portfolio_8php_a590b8de195aaadec585256b0cad3a014}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\$thumbnail\_url@{\$thumbnail\_url}}
+\index{\$thumbnail\_url@{\$thumbnail\_url}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\$thumbnail\_url}{$thumbnail\_url}}
+{\footnotesize\ttfamily \$thumbnail\+\_\+url = get\+\_\+the\+\_\+post\+\_\+thumbnail\+\_\+url( get\+\_\+the\+\_\+\+ID(), \textquotesingle{}full\textquotesingle{} )}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}\label{archive-jetpack-portfolio_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{header_8php_a46061e9d534a2b88c19b06ebe19099ad}{else}} \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_ab4d017bcc79cd2827c3dce8af2570e91}\label{archive-jetpack-portfolio_8php_ab4d017bcc79cd2827c3dce8af2570e91}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!endif@{endif}}
+\index{endif@{endif}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{endif}{endif}}
+{\footnotesize\ttfamily \mbox{\hyperlink{header_8php_a46061e9d534a2b88c19b06ebe19099ad}{else}} endif}
+
+\mbox{\Hypertarget{archive-jetpack-portfolio_8php_ab562c3506f4ec7d5c183ea063234360f}\label{archive-jetpack-portfolio_8php_ab562c3506f4ec7d5c183ea063234360f}} 
+\index{archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}!endwhile@{endwhile}}
+\index{endwhile@{endwhile}!archive-\/jetpack-\/portfolio.php@{archive-\/jetpack-\/portfolio.php}}
+\doxysubsubsection{\texorpdfstring{endwhile}{endwhile}}
+{\footnotesize\ttfamily if (has\+\_\+post\+\_\+thumbnail()) endwhile}
+

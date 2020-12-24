@@ -1,0 +1,17 @@
+--2020-12-23 23:24:24--  https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/100413_1907_TheBodgeItS1.png
+Resolving mk0resourcesinfm536w.kinstacdn.com (mk0resourcesinfm536w.kinstacdn.com)... 95.141.35.225
+Connecting to mk0resourcesinfm536w.kinstacdn.com (mk0resourcesinfm536w.kinstacdn.com)|95.141.35.225|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://resources.infosecinstitute.com/wp-content/uploads/100413_1907_TheBodgeItS1.png [following]
+--2020-12-23 23:24:24--  https://resources.infosecinstitute.com/wp-content/uploads/100413_1907_TheBodgeItS1.png
+Resolving resources.infosecinstitute.com (resources.infosecinstitute.com)... 35.188.253.117
+Connecting to resources.infosecinstitute.com (resources.infosecinstitute.com)|35.188.253.117|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 57761 (56K) [image/png]
+Saving to: ‘100413_1907_TheBodgeItS1.png’
+
+     0K .......... .......... .......... .......... .......... 88%  462K 0s
+    50K ......                                                100%  301M=0.1s
+
+2020-12-23 23:24:25 (521 KB/s) - ‘100413_1907_TheBodgeItS1.png’ saved [57761/57761]
+

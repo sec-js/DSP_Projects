@@ -1,0 +1,1 @@
+{"description":"","goal":"","solution":"","readme":"# Wordpress php 5.6 xdebug   \nThis is an example of wordpress with php xdebug enabled  \nSet dsp.com in /etc/hosts to point dsp host:  \n```  \n127.0.0.1 dsp.com  \n```   \nYou can navigate the instance by using the following link:  \nhttp://dsp.com:8000 \n","author":"dsp"}

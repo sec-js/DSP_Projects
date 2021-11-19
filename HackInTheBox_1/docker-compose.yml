@@ -1,0 +1,21 @@
+version: '2'
+services:
+  WebServer:
+    image: 'dockersecplayground/linode_lamp:v1.0'
+    stdin_open: true
+    tty: true
+    ports:
+      - '9000:80'
+    volumes:
+      # - './website:/var/www/example.com/public_html/topolinux_agency'
+      - './website:/var/www/example.com/public_html'
+    cap_add:
+      - NET_ADMIN
+    networks:
+      network_0:
+        ipv4_address: 193.20.1.3
+networks:
+  network_0:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24

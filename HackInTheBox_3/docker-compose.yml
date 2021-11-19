@@ -1,0 +1,29 @@
+version: '2'
+services:
+  first:
+    image: 'dockersecplayground/hitb_3:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1:
+        ipv4_address: 193.20.3.2
+    volumes:
+      - './config.inc.php:/var/www/html/config.inc.php'
+      - './local.txt:/var/www/local.txt'
+  mysql_first:
+    image: 'mysql:5.5'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1:
+        ipv4_address: 193.20.3.3
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+networks:
+  network_1:
+    ipam:
+      config:
+        - subnet: 193.20.3.1/24

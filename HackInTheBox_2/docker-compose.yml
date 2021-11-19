@@ -1,0 +1,16 @@
+version: '2'
+services:
+  hitb2:
+    image: 'dockersecplayground/hitb_2:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_0:
+        ipv4_address: 193.20.2.14
+    volumes:
+      - './website:/var/www/html'
+networks:
+  network_0:
+    ipam:
+      config:
+        - subnet: 193.20.2.1/24
